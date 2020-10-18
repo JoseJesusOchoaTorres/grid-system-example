@@ -1,0 +1,47 @@
+$black: black;
+$gray-dark: rgb(58, 58, 58);
+$gray: rgb(133, 133, 133);
+$gray-light:  rgb(228, 228, 228);
+$white: white;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: $gray-dark;
+    min-height: 100vh;
+    font-size: 0.8rem;
+
+    [class^="col"] {
+        text-align: center;
+        color: $white;
+
+        &:nth-child(odd) {
+            background-color: $black;
+        }
+        
+        &:nth-child(even) {
+            background-color: $gray-dark;
+        }
+    }
+}
+
+.heading {
+    &__container {
+        border-bottom: 1px solid $gray-light;
+        background-color: $white;
+        justify-content: center;
+        margin-bottom: 4rem;
+        align-items: center;
+        display: flex;
+    }
+    
+    &__title {
+        background: -webkit-linear-gradient(0.25turn, $black, $gray);
+        background: linear-gradient(0.25turn, $black, $gray);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 72px;
+        margin: 3rem;
+    }
+}

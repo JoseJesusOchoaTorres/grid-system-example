@@ -1,0 +1,25 @@
+/*------------------------------------*\
+* CONTAINER
+\*------------------------------------*/
+$container-max-width: 84rem;
+$gutter: 1rem;
+
+/*------------------------------------*\
+* COLUMNS
+\*------------------------------------*/
+$columns-number: 12;
+
+/*------------------------------------*\
+* BREAKPOINTS
+\*------------------------------------*/
+// Small devices (landscape phones, etc)
+$screen-xs-max: 768px;
+
+// Medium devices (tablets, 769px and up)
+$screen-sm-min: 769px;
+
+// Large devices (desktops, 992px and up)
+$screen-md-min: 992px;
+
+// Extra large devices (large desktops, 1200px and up)
+$screen-lg-min: 1200px;

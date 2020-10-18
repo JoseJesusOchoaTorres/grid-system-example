@@ -1,0 +1,15 @@
+{
+  "name": "grid-system-1d",
+  "version": "1.0.0",
+  "description": "This is a one dimension grid system example.",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch src/scss/index.scss:build/css/index.css",
+    "sass-prod": "sass src/scss/index.scss:build/css/index.min.css --style compressed"
+  },
+  "author": "Jose Jesus Ochoa Torres",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}
