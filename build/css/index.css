@@ -862,6 +862,7 @@ body {
 \*------------------------------------*/
 body {
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 4rem;
   font-weight: lighter;
   color: #3a3a3a;
   min-height: 100vh;
@@ -876,6 +877,13 @@ body [class^=col]:nth-child(odd) {
 }
 body [class^=col]:nth-child(even) {
   background-color: #3a3a3a;
+}
+body .row {
+  margin: 1rem 0;
+}
+
+.container {
+  padding: 0 0.5rem;
 }
 
 .heading__container {
@@ -894,6 +902,18 @@ body [class^=col]:nth-child(even) {
   background-clip: text;
   font-size: 72px;
   margin: 3rem;
+}
+
+.topic__title {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: black;
+}
+.topic__subtitle {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=index.css.map */

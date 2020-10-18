@@ -15,22 +15,163 @@
     </div>
 
     <div class="container">
+        <h2 class="topic__title">Columnas</h2>
+        <h3 class="topic__subtitle">Tamaño definido automáticamente</h3>
+
+        <div class="row">
+            <div class="col">1</div>
+        </div>
+
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+        </div>
+
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+        </div>
+
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+        </div>
+
+        <pre><code class="lang-html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;1&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h3 class="topic__subtitle">Tamaño definido manualmente</h3>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-2">1</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8">2</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4 col-lg-3">1</div>
+            <div class="col-xs-4 col-lg-6">2</div>
+            <div class="col-xs-4 col-lg-3">3</div>
+        </div>
+
         <div class="row">
             <div class="col-xs-4">1</div>
             <div class="col-xs-4">2</div>
             <div class="col-xs-4">3</div>
         </div>
 
-        <pre>
-        <code class="language-html">&lt;div class=&quot;container&quot;&gt;
+        <pre><code class="lang-html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12 col-md-4 col-lg-2&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-8&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-2&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-4 col-lg-3&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;col-xs-4 col-lg-6&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;col-xs-4 col-lg-3&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-4&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;col-xs-4&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;col-xs-4&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h2 class="topic__title">Columnas anidadas</h2>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-4">1</div>
+                    <div class="col-xs-4">2</div>
+                    <div class="col-xs-4">3</div>
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-4">4</div>
+                    <div class="col-xs-4">5</div>
+                    <div class="col-xs-4">6</div>
+                </div>
+            </div>
+        </div>
+
+        <pre><code class="lang-html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;
                 &lt;div class=&quot;col-xs-4&quot;&gt;1&lt;/div&gt;
                 &lt;div class=&quot;col-xs-4&quot;&gt;2&lt;/div&gt;
                 &lt;div class=&quot;col-xs-4&quot;&gt;3&lt;/div&gt;
             &lt;/div&gt;
-        &lt;/div&gt;</code></pre>
-    </div>
+        &lt;/div&gt;
 
+        &lt;div class=&quot;col-xs-6&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-xs-4&quot;&gt;4&lt;/div&gt;
+                &lt;div class=&quot;col-xs-4&quot;&gt;5&lt;/div&gt;
+                &lt;div class=&quot;col-xs-4&quot;&gt;6&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h2 class="topic__title">Offsets</h2>
+
+        <div class="row">
+            <div class="col-xs-4">1</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-8">3</div>
+        </div>
+
+        <pre><code class="lang-html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-4&quot;&gt;1&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-4 col-xs-offset-4&quot;&gt;2&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-4 col-xs-offset-8&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
     <script src="./src/js/landing-page/prism.js" defer></script>
 </body>
 </html>
