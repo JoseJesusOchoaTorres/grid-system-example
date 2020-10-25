@@ -55,16 +55,14 @@ Nuestro archivo de SASS principal es `index.scss` y luce más o menos asi:
 @import './grid/grid';
 ```
 
-En él, como puedes ver, estoy importando todos mis otros archivos.
-
-En nuestro archivo `package.json` encontrarás dos NPM scripts:
+En él, como puedes ver, estoy importando todos mis otros archivos. En nuestro archivo `package.json` encontrarás dos NPM scripts:
 
 ```js
 "scripts":{
     "sass-dev":"sass --watch src/scss/index.scss:build/css/index.css",
     "sass-prod":"sass src/scss/index.scss:build/css/index.min.css --style compressed"
 },
-````
+```
 
 Estos pueden ser ejecutados desde nuestra línea de comandos / terminal de la siguiente manera:
 
@@ -84,6 +82,17 @@ Por otro lado el segundo comando, *sass-prod*, correrá una sola vez, este scrip
 Si observas el archivo `index.html` estamos usando el archivo `index.css`, en este archivo puedes experimentar con el código que estemos preparando durante este artículo, pero asegurate de usar en producción el archivo `index.min.css`
 
 También he creado un folder con dos archivos, `normalice` y `my-normalize`. El propósito de estos es aplicar ciertas reglas de CSS base, con el objetivo de evitar que cada browser aplique diferentes estilos por defecto, si estas interesado en leer mas al respecto puedes ver la página oficial de [normalize](https://necolas.github.io/normalize.css/) o este [artículo](https://www.kodetop.com/diferencias-entre-reset-css-y-normalize-css/) explicando las diferencias entre normalize, reset y otras opciones.
+
+El ultimo de los requerimientos antes de continuar es definir la siguiente regla en nuestro `_grid.scss`:
+
+```scss
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+```
+
+Con la propiedad de `box-sizing` le estamos indicando al _user-agent_ o _browser_ que la anchura de un elemento se considerará a partir del borde. Recordemos que el _Box model_ está conformado por `margin`, `border`, `padding` y `content`. El navegador por defecto considera la anchura desde el `content` y para este proyecto requerimos que no sea así.
+
 
 Una vez explicado esto vamos a iniciar.
 
